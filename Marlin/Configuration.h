@@ -1,6 +1,7 @@
 /**************** TEVO TARANTULA EASY CONFIG ***************************
             Original idea by terryb.print3d@gmail.com
              Modified by jb.github@rcairgallery.com
+             Updated By Clawszilla bandrewclawson@gmail.com
 
     The latest version of Terry's original file will always be found at:
           https://github.com/terryb58/Marlin-EasyConfig
@@ -28,7 +29,7 @@
 
 ***********************************************************************/
 
-#define PRINTER_NAME "TEVO Tarantula (EasyConfig)"  // Change this to whatever you wish, or leave it as it is.
+#define PRINTER_NAME "Clawz3D"  // Change this to whatever you wish, or leave it as it is.
                                                     // NOTE: Whatever you put here will have " Ready..." appended to it.
 
 /**
@@ -42,7 +43,7 @@
 //#define HOTEND_E3DV6              // Genuine E3D v6 hotend.
 //#define FULL_GRAPHIC_SMART        // Enable this if you have a RepRap Discount Full Graphic Smart Controller (The
                                     // stock controller is a RepRap Discount Smart Controller)
-//#define Z_DUAL_STEPPER_DRIVERS    // Enable this if you have dual Z stepper motors with the second stepper motor
+#define Z_DUAL_STEPPER_DRIVERS    // Enable this if you have dual Z stepper motors with the second stepper motor
                                     // connected to the next available E plug (usually E1)
 
 #define MOTHERBOARD BOARD_MKS_GEN_13        // Original controller board with built in stepper drivers. Works with MKS BASE 1.3, 1.4
@@ -66,14 +67,14 @@
  * Primary Extruder steps per mm (plugged in to E0 port on controller)
  * (How to calibrate: https://toms3d.org/2014/04/06/3d-printing-guides-calibrating-your-extruder/)
  */
-#define E0_STEPS      100 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
+#define E0_STEPS      400 // Stock extruder. If you have a Tevo Titan, try 400 then calibrate.
 //#define CHANGE_E0_DIRECTION   // If your extruder is going backwards, enable this.
 
 /**
  * Z Axis steps per mm (Default for stock lead screw is 1600)
  * If you install a lead screw with a different pitch and/or lead, change this
  */
-#define Z_STEPS      1600 // Stock lead screw
+#define Z_STEPS      400 // Stock lead screw is 1600, nema is 400
 
 /**
  * Z-Probe type (must be none or one of them)
@@ -81,7 +82,7 @@
  */
 //#define BLTOUCH       // ANTClabs BLTouch sensor (might also work with clones)
 //#define BLTOUCH_V3    // ANTCLabs BLTouch sensor version 3
-//#define SN04          // Green sensor
+#define SN04          // Green sensor
 //#define INDUCTIVE_NO  // Normally open inductive sensor
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
 //#define SERVO_PROBE   // Endstop switch on rotating arm. Set servo angles!
@@ -92,10 +93,10 @@
  * Must choose one of these other than MANUAL if a Z-Probe type is selected.
  */
 //#define TRIPOINT
-//#define LINEAR
+#define LINEAR
 //#define BILINEAR
 //#define UBL
-#define MANUAL
+//#define MANUAL
 
 /**
  * Z-Probe offset from nozzle (https://github.com/JimBrown/MarlinTarantula/wiki/How-to-determine-your-Z-Probe-offset)
@@ -105,7 +106,7 @@
 #define SENSOR_LEFT        0
 #define SENSOR_RIGHT       0
 #define SENSOR_FRONT       0
-#define SENSOR_BEHIND      0
+#define SENSOR_BEHIND      88
 
 /**
  * Number of grid points in each direction
@@ -188,8 +189,8 @@
  *       CUSTOM_USER_MENUS for PETG to appear, along with PLA and ABS, under Custom Commands.
  *       PLA and ABS will appear under both Custom Command and Prepare.
  */
-#define Hot_PLA     215
-#define Bed_PLA      75
+#define Hot_PLA     220
+#define Bed_PLA      60
 
 #define Hot_ABS 		240
 #define Bed_ABS 		100
