@@ -82,8 +82,8 @@
  */
 //#define BLTOUCH       // ANTClabs BLTouch sensor (might also work with clones)
 //#define BLTOUCH_V3    // ANTCLabs BLTouch sensor version 3
-#define SN04          // Green sensor
-//#define INDUCTIVE_NO  // Normally open inductive sensor
+//#define SN04          // Green sensor
+#define INDUCTIVE_NO    // Normally open inductive sensor ****PNP NO 4mm sensor****
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
 //#define SERVO_PROBE   // Endstop switch on rotating arm. Set servo angles!
 //#define NOZZLE_PROBE	// Nozzle wired up to contact metal on bed
