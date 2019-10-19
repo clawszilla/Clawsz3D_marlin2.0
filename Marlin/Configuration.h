@@ -37,9 +37,9 @@
  */
 //#define LARGE_BED
 #define SDSUPPORT
-#define CHANGE_Y_DIRECTION        // If your bed homes in the wrong direction (it should move front to back) enable this.
+//#define CHANGE_Y_DIRECTION        // If your bed homes in the wrong direction (it should move front to back) enable this.
 //#define CHANGE_X_DIRECTION        // If your X carriage homes in the wrong direction (it should move right to left) enable this.
-//#define CHANGE_Z_DIRECTION        // If your Z homes in the wrong direction (it should move top to bottom) enable this.
+#define CHANGE_Z_DIRECTION        // If your Z homes in the wrong direction (it should move top to bottom) enable this.
 //#define HOTEND_E3DV6              // Genuine E3D v6 hotend.
 //#define FULL_GRAPHIC_SMART        // Enable this if you have a RepRap Discount Full Graphic Smart Controller (The
                                     // stock controller is a RepRap Discount Smart Controller)
@@ -56,7 +56,7 @@
  * (How to center prints: https://github.com/JimBrown/MarlinTarantula/wiki/How-to-center-your-prints-(EasyConfig))
  */
 #define NOZZLE_X          0
-#define NOZZLE_Y          0
+#define NOZZLE_Y          -7
 
 /**
  * Minimal Z height (in mm) before homing (G28) for Z clearance above the bed, clamps, ...
@@ -103,10 +103,10 @@
  * Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
-#define SENSOR_LEFT        0
+#define SENSOR_LEFT        33
 #define SENSOR_RIGHT       0
-#define SENSOR_FRONT       0
-#define SENSOR_BEHIND      88
+#define SENSOR_FRONT       13
+#define SENSOR_BEHIND      0
 
 /**
  * Number of grid points in each direction
@@ -117,7 +117,7 @@
 /**
  * Margin around perimiter of bed for probing (will not probe outside this margin)
  */
-#define BED_MARGIN         1
+#define BED_MARGIN         8
 
 /**
  * Servo probe deploy and stow angles
