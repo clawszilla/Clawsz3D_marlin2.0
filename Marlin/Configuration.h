@@ -82,7 +82,7 @@
  */
 //#define BLTOUCH       // ANTClabs BLTouch sensor (might also work with clones)
 //#define BLTOUCH_V3    // ANTCLabs BLTouch sensor version 3
-#define SN04          // Green sensor
+#define SN04          // Green sensor (actualy a NO NPN sensor but it's the same as the SN04 for configuration)
 //#define INDUCTIVE_NO  // Normally open inductive sensor *PNP LJ12A3-4-Z/BY sensor, is NO*
 //#define INDUCTIVE_NC  // Normally closed inductive sensor
 //#define SERVO_PROBE   // Endstop switch on rotating arm. Set servo angles!
@@ -103,9 +103,9 @@
  * Use only one of Left/Right and Front/Behind. Others must be 0 (zero)
  * If you have a dual nozzle the offsets are calculated from the primary nozzle (the one plugged in to E0)
  */
-#define SENSOR_LEFT        33
+#define SENSOR_LEFT        25
 #define SENSOR_RIGHT       0
-#define SENSOR_FRONT       13
+#define SENSOR_FRONT       16
 #define SENSOR_BEHIND      0
 
 /**
@@ -1341,7 +1341,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 200
+#define X_BED_SIZE 190 //is 200 reduced to prevent hitting the electronics
 #if ENABLED(LARGE_BED)
   #define Y_BED_SIZE 280
 #else
